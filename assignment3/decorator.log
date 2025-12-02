@@ -1,0 +1,15 @@
+function: hello_world
+positional parameters: none
+keyword parameters: none
+return: None
+----------------------------------------
+function: many_positional
+positional parameters: (10, 20, 30)
+keyword parameters: none
+return: True
+----------------------------------------
+function: many_keywords
+positional parameters: none
+keyword parameters: {'a': 1, 'b': 2, 'c': 3}
+return: <function logger_decorator at 0x000002016440A2A0>
+----------------------------------------
