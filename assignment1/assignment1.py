@@ -99,7 +99,7 @@ print("------------------------------------------------------")
 #     assert a1.repeat("up,", 4) == "up,up,up,up,"
 
 def repeat(string, count):
-    for s in string:
+    for s in range(4):
         return string * count
 
 print(repeat("up,", 4))
@@ -140,7 +140,7 @@ print(titleize("a separate peace")) #"A Separate Peace"
 print(titleize("after on"))  #"After On"
 
 print("------------------------------------------------------")
-
+#Task 9
 def hangman(secret, guess):
     return "".join(letter if letter in guess else "_" for letter in secret)
 
