@@ -1,0 +1,15 @@
+function: say_hello
+positional parameters: none
+keyword parameters: none
+return: None
+
+function: check_numbers
+positional parameters: (10, 20, 30)
+keyword parameters: none
+return: True
+
+function: show_info
+positional parameters: none
+keyword parameters: {'name': 'Syeda', 'country': 'USA'}
+return: <function logger_decorator at 0x000001589EB0A2A0>
+
