@@ -151,6 +151,33 @@ try:
 
     conn.commit()
     print("Data inserted successfully.")
+    
+    # ---------- TASK 4: SQL QUERIES ----------
+
+    print("\n--- All Subscribers ---")
+    cursor.execute("SELECT * FROM subscribers")
+    rows = cursor.fetchall()
+    for row in rows:
+        print(row)
+
+    print("\n--- All Magazines (Sorted by Name) ---")
+    cursor.execute("SELECT * FROM magazines ORDER BY name")
+    rows = cursor.fetchall()
+    for row in rows:
+        print(row)
+
+    print("\n--- Magazines Published by Tech Media ---")
+    cursor.execute("""
+        SELECT m.name, p.name
+        FROM magazines m
+        JOIN publishers p
+        ON m.publisher_id = p.publisher_id
+        WHERE p.name = ?
+    """, ("Tech Media",))
+    rows = cursor.fetchall()
+    for row in rows:
+        print(row)
+
 
 except sqlite3.Error as e:
     print("SQLite error:", e)
