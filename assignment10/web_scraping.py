@@ -4,3 +4,12 @@
 # It disallows scraping of the /staff/ directory for all user agents.
 # This scraping assignment only accesses publicly available pages
 # and avoids the restricted /staff/ section, so it complies with the site policy.
+
+# Task 2: Understanding HTML and the DOM for the Durham Library Site
+# I opened the Durham County Library search results page and used Chrome Developer Tools (Shift + Ctrl + J) to inspect the HTML structure.
+# Each search result is contained within an unordered list (ul) and represented by a single li element, which holds all information for one item. This li element is the container used to identify individual search results.
+# Within the search result li element:
+# The title is stored in an h3 element with class cp-title.
+# The author information is stored as link (a) elements with class cp-author-link, allowing for multiple authors per item.
+# The format and publication year are stored together inside a div element with class cp-format-field.
+# These class values will be used in the program to extract the required data.
