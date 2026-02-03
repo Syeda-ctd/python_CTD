@@ -1,0 +1,5 @@
+One challenge I faced was that the OWASP Top Ten landing page uses dynamic content that is not fully available in the DOM when accessed via Selenium.
+ As a result, my XPath queries returned no results even though the data was visible in the browser. 
+ To resolve this, I inspected the site structure and found that the OWASP Top 10 2021 page contains static 
+ HTML links that Selenium can reliably read. I updated my script to scrape that page instead,
+which allowed me to successfully extract and store the top 10 vulnerabilities.
