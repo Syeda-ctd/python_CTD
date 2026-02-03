@@ -1,0 +1,10 @@
+# Task 5: Ethical Web Scraping
+# 1. Which sections of the website are restricted for crawling?
+# Wikipedia restricts crawling of non-content and sensitive areas such as user-specific pages, administrative sections, internal tools, search result pages, and certain dynamically generated endpoints. These areas are not intended for public indexing and may place unnecessary load on the servers.
+
+# 2. Are there specific rules for certain user agents?
+# Yes. Wikipedia’s robots.txt file defines different rules for different user agents. Some known or aggressive bots have stricter restrictions, while trusted crawlers such as search engines may be granted broader access. Generic user agents must follow the default rules.
+
+# 3. Reflection on robots.txt and ethical scraping
+# Websites use robots.txt to clearly communicate which parts of their site can be accessed by automated programs. This helps protect server performance, user privacy, and sensitive functionality. Following robots.txt promotes ethical web scraping by ensuring developers respect a website’s guidelines and resources.
+
